@@ -1,0 +1,10 @@
+.header {
+    background: $color-background-gradient;
+    padding: 13px 0px;
+    text-align: center;
+    &-link {
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,127 @@
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+    position: relative;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+[type="radio"]:checked + label {
+    background:$color-swiper;
+    border: 1px solid $color-primary;
+    font-weight: 400;
+    color: $color-black;
+}
+[type="radio"]:not(:checked) + label {
+    border: 1px solid $color-border;
+}
+
+.radio {
+    &-wrapper {
+        span {
+            margin-right: 15px;
+        }
+        &__discount {
+            span {
+                margin: 0;
+                color: $color-primary;
+            }
+            label {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 22px;
+                text-align: center;
+                color: $color-black;
+                background: $color-white;
+            }
+            [type="radio"]:not(:checked) + label {
+                border: none;
+                padding: 16px 10px;
+            }
+            [type="radio"]:checked + label {
+                border: 1px solid $color-primary;
+                background: $color-white;;
+                padding: 16px 10px;
+
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 5px;
+                    height: 5px;
+                    margin-bottom: 2px;
+                    background: $color-primary;
+                    border-radius: 100%;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+.checkmark {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: $color-white;
+    border: 1px solid $color-gray;
+    border-radius: 50%;
+    &:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    &-img {
+        top: 4px;
+    }
+    &-label {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        color: $color-black;
+    }
+    &-container {
+        display: flex;
+        position: relative;
+        padding-left: 25px;
+        width: 100%;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        input:checked ~ .checkmark {
+            background: $color-white;
+            border: 1px solid $color-primary;
+        }
+        input:checked ~ .checkmark:after {
+            display: block;
+        }
+        .checkmark:after {
+            background: $color-primary;
+            border-radius: 50%;
+            height: 10px;
+            left: 2px;
+            top: 2px;
+            width: 10px;
+        }
+    }
+}

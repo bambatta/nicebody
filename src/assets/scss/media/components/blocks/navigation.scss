@@ -1,0 +1,42 @@
+@media #{$xs} {
+    .navigation {
+        &-list {
+            right: -242px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 30px;
+            max-width: 235px;
+
+            width: 100%;
+            background: $color-white;;
+            position: fixed;
+            z-index: 2;
+
+            top: 0px;
+            padding: 26px 20px;
+            box-shadow: 3px 7px 49px rgb(77 49 45 / 33%);
+            transition: 1s ease;
+            height: 100vh;
+            .close-btn {
+                display: block;
+                margin-bottom: 50px;
+            }
+            &.active {
+                right: 0;
+            }
+        }
+        &-item {
+            &_contact {
+                display: block;
+            }
+        }
+        &__menu-btn {
+            display: block;
+        }
+        &-btn {
+            gap: 35px;
+            margin-right: 0;
+        }
+    }
+}

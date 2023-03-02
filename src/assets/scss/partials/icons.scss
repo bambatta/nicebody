@@ -1,0 +1,23 @@
+.icon-svg {
+    display: inline-block;
+    color: $color-black;
+    fill: currentColor;
+    stroke: currentColor;
+}
+.icon-pink {
+    stroke: $color-primary;
+    color: transparent;
+}
+.icon-swiper {
+    stroke:$color-white;
+    fill: none;
+}
+.icon-white {
+    stroke:$color-white;
+}
+.icon-svg-check {
+    fill: $color-primary;
+}
+.icon-grey{
+    color: #D1D1D1;
+}

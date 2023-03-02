@@ -1,0 +1,22 @@
+@media #{$xs} {
+    .profile {
+        &__order {
+            display: none;
+            &.active {
+                display: block;
+            }
+        }
+        .default-btn_border-none {
+            &.media {
+                display: block;
+            }
+        }
+        &__block {
+            &-title {
+                font-size: 32px;
+                line-height: 36px;
+            }
+        }
+    }
+}
+

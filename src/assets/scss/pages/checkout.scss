@@ -1,0 +1,286 @@
+.checkout {
+    display: flex;
+    gap: 36px;
+    height: 100%;
+    &-page {
+        height: 100%;
+        .loader {
+            height: 100%;
+            .default-page__container {
+                height: 100%;
+            }
+        }
+    }
+
+    
+
+    &__container {
+        & .select {
+            margin-bottom: 0;
+        }
+    }
+
+    & .input-wrapper {
+        margin-bottom: 0;
+        
+    }
+
+    &-logo {
+        width: 100px;
+        height: 57px;
+        margin-bottom: 40px;
+    }
+    .default-title {
+        margin-top: 20px;
+        margin-bottom: 43px;
+    }
+    &-btn {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        &.default-text_pink {
+            margin-bottom: 40px;
+            margin-top: 20px;
+        }
+        &.default-text {
+            margin-top: 40px;
+        }
+    }
+    &-wrapper {
+        max-width: 670px;
+        width: 100%;
+        padding-right: 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-right: 1px solid $color-border;
+    }
+    .btn .btn-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__express {
+        display: flex;
+        align-items: center;
+        gap: 39px;
+        &-btn {
+            background-color:$color-white;
+            background-image: url(/images/checkout/paypal-img.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+
+            width: 163px;
+            height: 63px;
+            border: 1px solid #0047ff;
+        }
+    }
+    &__or {
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        margin-top: 41px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 42px;
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: $color-border;
+        }
+    }
+    &-cart {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .default-text_pink {
+            display: block;
+            margin-bottom: 31px;
+        }
+        &_media {
+            display: none;
+            margin-bottom: 63px;
+        }
+    }
+    &-copyright {
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .card {
+        border: none;
+    }
+    .card-header {
+        /*    border: 1px solid $color-primary; */
+        border-bottom: none;
+        padding: 0 !important;
+        &:first-child {
+            border-radius: initial;
+        }
+        .btn:hover,
+        .btn-check:focus + .btn,
+        .btn:focus,
+        .btn-check:checked + .btn,
+        .btn-check:active + .btn,
+        .btn:active,
+        .btn.active,
+        .btn.show {
+            background: $color-white;;
+            color: $color-black;
+            border-radius: initial;
+            box-shadow: none;
+            border: 1px solid $color-primary;
+            border-bottom: none;
+            &.collapsed {
+                color: $color-primary;
+                background: $color-white;;
+                border: 1px solid $color-primary;
+            }
+        }
+    }
+    .collapsed.btn-info {
+        border: none;
+        height: 100%;
+        background: $color-white;
+        width: 100%;
+        border-radius: initial;
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 19px;
+        line-height: 28px;
+        border: 1px solid $color-primary;
+
+        .icon-svg {
+            transition: 0.4s;
+            transform: rotate(0deg);
+            stroke: $color-primary;
+        }
+    }
+    .btn-info {
+        background: $color-white;
+        border: none;
+        height: 100%;
+        background-color: none;
+        width: 100%;
+        border-radius: initial;
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 19px;
+        line-height: 28px;
+        color: $color-black;
+        border: 1px solid $color-primary;
+        border-bottom: none;
+        box-shadow: none;
+        .icon-svg {
+            transition: 0.4s;
+            transform: rotate(180deg);
+            stroke: $color-primary;
+        }
+    }
+    .card-body {
+        border: 1px solid $color-primary;
+        border-top: none;
+        padding: 0px 40px;
+        .default-text_pink {
+            display: block;
+            margin-bottom: 31px;
+        }
+    }
+    &__form-submit {
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 370px;
+        margin: auto;
+        .checkout-img {
+            width: 258px;
+            height: 243px;
+            position: absolute;
+            &__wrapper {
+                width: 244px;
+                height: 244px;
+                border-radius: 100%;
+                background:$color-bacground;
+                position: relative;
+                margin-top: 100px;
+                &.failed {
+                    background:$color-failed;
+                }
+            }
+        }
+        .default {
+            &-text_black {
+                margin-bottom: 40px;
+            }
+            &-title {
+                &.status {
+                    color: $color-green;
+                    margin-top: 40px;
+                    margin-bottom: 21px;
+                    &.failed {
+                        color: $color-primary;
+                    }
+                }
+            }
+        }
+    }
+    &__status-btn {
+        background:$color-green;
+        border: none;
+        width: 100%;
+        padding: 23px;
+        text-align: center;
+    }
+    &__wrapper-btn {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 40px;
+        width: 100%;
+        button,
+        a {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .navigation-count {
+        left: 87px;
+        top: -8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-copyrigh {
+        margin-top: 301px;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 22px;
+        color: $color-gray;
+        text-align: center;
+    }
+
+    & .default__form-title {
+        margin-bottom: 0;
+    }
+
+    & .default__form-item {
+        margin-bottom: 0;
+    }
+
+    & .auth-text {
+        margin: 0;
+    }
+}

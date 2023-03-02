@@ -1,0 +1,15 @@
+.textarea {
+    background: $color-white;
+    box-shadow: 0px 3px 40px rgba(65, 45, 45, 0.1);
+    border: 1px solid $color-border;
+    padding: 23px 30px;
+    width: 100%;
+    resize: none;
+    color: $light-gray;
+    &:focus-visible {
+        outline: none;
+    }
+    &::placeholder {
+        color: $color-input;
+    }
+}

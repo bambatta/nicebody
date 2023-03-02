@@ -1,0 +1,42 @@
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="checkbox"]:checked + label,
+[type="checkbox"]:not(:checked) + label {
+    position: relative;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+
+[type="checkbox"]:checked + label {
+    border: 1px solid $color-border;
+    font-weight: 400;
+    color: $color-black;
+    svg {
+        display: block;
+    }
+}
+[type="checkbox"]:not(:checked) + label {
+    border: 1px solid $color-border;
+    svg {
+        display: none;
+    }
+}
+
+.checkbox {
+    &-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        span {
+            margin-right: 15px;
+        }
+        label{cursor: pointer;}
+    }
+}

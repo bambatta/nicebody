@@ -1,0 +1,162 @@
+.profile {
+    padding-bottom: 323px;
+    &-password {
+        padding-top: 10px;
+    }
+    .card {
+        border: none;
+    }
+
+    & .input-wrapper {
+        margin-bottom: 0;
+    }
+
+
+    &__top {
+        &-wrapper {
+            &:not(:last-child) {
+                border-bottom: 1px solid #d9d9d9;
+            }
+            .profile-btn__order-collapse {
+                margin-top: 30px;
+            }
+            .default-btn_border-none {
+                margin-bottom: 29px;
+            }
+
+        }
+    }
+    .btn-info {
+        background:$color-white;
+        border: none;
+        height: 100%;
+        background-color: none;
+        width: 100%;
+        border-radius: initial;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 19px;
+        line-height: 28px;
+        color: $color-black;
+        box-shadow: none;
+        .icon-svg {
+            transition: 0.4s;
+            transform: rotate(180deg);
+            stroke: $color-primary;
+        }
+    }
+    &__order {
+        /*   max-height: 1350px; */
+        /*  overflow: scroll; */
+    }
+    &-btn {
+        &__order-collapse {
+            display: flex;
+            align-items: flex-start;
+            border: none;
+            background: none;
+            flex-direction: column;
+            gap: 6px;
+            width: 100%;
+            &.collapsed {
+                .icon-svg-toggle {
+                    transition: 0.4s;
+                    transform: rotate(0deg);
+                }
+            }
+        }
+        &__wrapper {
+            display: flex;
+            align-items: baseline;
+            width: 100%;
+            gap: 10px;
+            .icon-svg-toggle {
+                transition: 0.4s;
+                margin-left: auto;
+                transform: rotate(180deg);
+            }
+        }
+        &__collapse {
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: start;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .icon-svg {
+                transition: 0.4s;
+            }
+            &:not(.collapsed) .icon-svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    &-wrapper {
+        display: flex;
+        gap: 54px;
+        justify-content: space-between;
+        margin-top: 86px;
+    }
+    &__block {
+        // max-width: 569px;
+        width: 100%;
+        &-title {
+            font-family: "Philosopher";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 54px;
+            color: $color-black;
+        }
+        .default-title {
+            margin-bottom: 21px;
+        }
+        &-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+    }
+    &__accordion {
+        &-item {
+            & p {
+                margin-bottom: 34px;
+            }
+
+            .collapse {
+                margin-top: 0;
+                margin-bottom: 41px;
+            }
+            .default-text_pink {
+                display: flex;
+                margin: auto;
+            }
+        }
+        &-title {
+            font-size: 19px;
+            line-height: 28px;
+        }
+    }
+    .default-btn_border-none {
+        &.media {
+            display: none;
+        }
+    }
+    .default-btn_border {
+        margin-top: 0;
+    }
+
+    .phoneInput {
+        margin-bottom: 0;
+    }
+
+    .phoneInput.has-error {
+      margin-bottom: 20px;
+    }
+}

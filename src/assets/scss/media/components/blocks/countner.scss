@@ -1,0 +1,23 @@
+@media #{$sm} {
+    .countner {
+        gap: 38px;
+        &-btn {
+            padding: 11px 17px;
+        }
+    }
+}
+@media #{$xs} {
+    .countner {
+        &-price_new {
+            font-size: 28px;
+            line-height: 31px;
+        }
+        &-price_old {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &-price {
+          flex-wrap: wrap;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.auth {
+    .modal-content {
+        background: $color-white;
+    }
+    &-social {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    &-bottom {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 15px;
+        .default-text_pink {
+            text-decoration: none;
+        }
+    }
+    .default-btn_border {
+        margin-top: 0;
+        width: calc(50% - 7px);
+        transition: border-color .3s;
+    }
+    &-text {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        button {
+            padding: 0;
+        }
+    }
+}

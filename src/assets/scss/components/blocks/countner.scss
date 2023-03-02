@@ -1,0 +1,61 @@
+.countner {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+    &__wrapper {
+        margin-top: 37px;
+        .quantity {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+    &-count {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    &-input {
+        font-family: Poppins;
+        font-style: Regular;
+        font-size: 20px;
+        border: none;
+        width: 30px;
+        text-align: center;
+        &:disabled {
+            background-color: $color-white;
+        }
+    }
+    &-btn {
+        padding: 11px 17px;
+    }
+    &-price {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        &_old {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 28px;
+            color: $color-black;
+        }
+        &_new {
+            font-family: "Philosopher";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 36px;
+            color: $color-primary;
+            &.black {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 19px;
+                line-height: 28px;
+                color: $color-black;
+            }
+        }
+    }
+}

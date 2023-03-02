@@ -1,0 +1,121 @@
+.navigation {
+  padding: 9px 0px;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  &-list {
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    padding: 0;
+
+    li {
+      margin-right: 59px;
+    }
+
+    &.active li {
+      margin-right: 0;
+    }
+    .close-btn {
+      display: none;
+    }
+    a {
+      text-decoration: none;
+    }
+    .default-text_pink {
+      margin-top: 10px;
+      text-decoration: underline;
+    }
+  }
+  &-item {
+    &_contact {
+      display: none;
+    }
+  }
+  &-btn {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-right: 7px;
+    margin-bottom: 6px;
+  }
+  &-count {
+    width: max-content;
+    min-width: 24px;
+    height: 24px;
+    border-radius: 50px;
+    font-size: 15px;
+    line-height: 22px;
+    color: $color-white;
+    background: $color-background-gradient;
+    padding: 1px 5px;
+    position: absolute;
+    bottom: -5px;
+    right: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &_cart {
+    position: relative;
+    border: none;
+    background: none;
+  }
+  &__menu-btn {
+    border: none;
+    background: none;
+    display: none;
+    padding: 0;
+    &_user {
+      border: none;
+      background: none;
+      display: none;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      span {
+        white-space: nowrap;
+      }
+      .icon-svg-toggle {
+        transition: 0.3s;
+      }
+      &.active {
+        .icon-svg {
+          stroke: $color-primary;
+          &-toggle {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+  &__user {
+    &-item {
+      button {
+        padding: 0;
+      }
+    }
+  }
+  &-btn {
+    position: relative;
+  }
+  &__user-list {
+    display: none;
+    position: absolute;
+    background: $color-white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 123px;
+    padding: 15px;
+    flex-direction: column;
+    gap: 15px;
+    top: 30px;
+    left: 0px;
+    z-index: 1;
+    &.active {
+      display: flex;
+    }
+  }
+}

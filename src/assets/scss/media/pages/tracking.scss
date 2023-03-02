@@ -1,0 +1,48 @@
+@media #{$xs} {
+    .tracking {
+
+        &__number {
+            &-current {
+                font-size: 15px;
+            }
+        }
+
+
+        &__content {
+            padding: 50px 20px;
+            padding-bottom: 50px;
+
+        }
+
+        &__way {
+            justify-content: center;
+
+            &-head {
+                font-size: 15px;
+            }
+
+            &-delivery {
+                gap: 20px;
+            }
+            
+            &-point {
+
+                &:first-child .tracking__way-popup {
+                    left: 0;
+                }
+    
+                &:last-child .tracking__way-popup {
+                    right: 0;
+                }
+            }
+        }
+
+        &-section {
+            padding: 30px 20px;
+        }
+    }
+
+}
+
+
+

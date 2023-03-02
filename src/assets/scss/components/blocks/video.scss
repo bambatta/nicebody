@@ -1,0 +1,125 @@
+.video {
+    max-width: 770px;
+    height: 561px;
+    width: 100%;
+    &-overlay {
+        transition: opacity .3s;
+        position: absolute;
+        max-width: 770px;
+        height: 561px;
+        width: 100%;
+
+        button {
+            color: $color-white;
+            opacity: 1;
+            transition: opacity 400ms;
+            position: absolute;
+            top: 50%;
+            left: 51%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 0;
+            z-index: 1;
+            border: none;
+            border-radius: 1000px;
+            transition: all 0.3s ease-in-out 0s;
+            cursor: pointer;
+            outline: none;
+            position: relative;
+            background: none;
+            span {
+                width: 73px;
+                height: 73px;
+                border-radius: 100%;
+                z-index: -1;
+                position: absolute;
+                z-index: -1;
+                top: 50%;
+                left: 46%;
+                animation: ring1 2s infinite;
+                transform: translate(-50%, -50%);
+                background: $color-primary;
+                animation-direction: alternate;
+            }
+            &::after {
+                content: "";
+                display: block;
+                width: 97px;
+                height: 97px;
+                border-radius: 100%;
+                background: $color-primary;
+                position: absolute;
+                z-index: -1;
+                top: 50%;
+                left: 45%;
+                transform: translate(-50%, -50%);
+                opacity: 0.5;
+                animation: ring2 2s infinite;
+                animation-direction: alternate;
+            }
+            &::before {
+                content: "";
+                display: block;
+                width: 123px;
+                height: 123px;
+                border-radius: 100%;
+                background: $color-primary;
+                position: absolute;
+                z-index: -1;
+                top: 50%;
+                left: 45%;
+                transform: translate(-50%, -50%);
+                opacity: 0.1;
+                animation: ring3 2s infinite;
+                animation-direction: alternate;
+            }
+            .icon-svg {
+                color: $color-white;
+            }
+
+            &:hover::after,
+            &:focus::after {
+                animation: none;
+                display: none;
+            }
+        }
+    }
+    &-wrapper {
+        position: relative;
+        display: flex;
+        margin: 0px auto;
+        max-width: 770px;
+        height: 561px;
+        width: 100%;
+    }
+}
+@keyframes ring1 {
+    from {
+        width: 73px;
+        height: 73px;
+    }
+    to {
+        width: 105px;
+        height: 105px;
+    }
+}
+@keyframes ring2 {
+    from {
+        width: 97px;
+        height: 97px;
+    }
+    to {
+        width: 147px;
+        height: 147px;
+    }
+}
+@keyframes ring3 {
+    from {
+        width: 123px;
+        height: 123px;
+    }
+    to {
+        width: 185px;
+        height: 185px;
+    }
+}

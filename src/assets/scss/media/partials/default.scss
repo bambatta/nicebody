@@ -1,0 +1,29 @@
+@media #{$sm} {
+    .default {
+        &-btn {
+            padding: 23px 38px;
+        }
+        &-page__container {
+            &.media {
+                padding-left: 0;
+            }
+        }
+    }
+}
+@media #{$xs} {
+    .default {
+        &-btn {
+            padding: 20px;
+            &_border {
+                padding: 20px;
+            }
+        }
+        &__form {
+            &-block {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+    .static-page__body{padding: 15px}
+}

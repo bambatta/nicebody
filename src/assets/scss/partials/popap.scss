@@ -1,0 +1,45 @@
+.popup__bg {
+    position: absolute;
+    bottom: 10%;
+    right: 70%;
+    transform: translate(70%, 50%);
+    z-index: 100;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    padding: 20px 30px;
+    color: $color-black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: $color-white;
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 10%);
+    border-radius: 20px;
+    animation: anvil 3s running;
+    opacity: 0;
+    width: max-content;
+    .icon-svg-fail {
+        fill: $color-error;
+        stroke: $color-white;
+    }
+}
+.popap-img {
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
+@keyframes anvil {
+    0% {
+        bottom: 10%;
+        opacity: 1;
+    }
+   
+    100% {
+        bottom: 20%;
+        opacity: 0;
+    }
+}

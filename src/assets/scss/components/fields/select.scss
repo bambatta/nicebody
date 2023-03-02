@@ -1,0 +1,90 @@
+.vs {
+    &__dropdown-toggle {
+        border: none !important;
+    }
+    &__actions {
+        position: absolute;
+        right: 0px;
+        top: 30%;
+        right: 31px;
+    }
+    &__selected-options {
+        padding: 0 !important;
+        margin-top: 12px;
+
+        & .vs__search {
+            margin: 0;
+            padding: 0;
+            :focus {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+    &__selected {
+        margin: 0 !important;
+        padding: 0 !important;
+
+        
+    }
+    &__dropdown-option--highlight {
+        background: none !important;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        color: $color-gray !important;
+        &:hover,
+        &:focus,
+        &:focus-visible,
+        &:active {
+            background: none !important;
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 22px;
+            color: $color-gray !important;
+        }
+    }
+    &__dropdown-option {
+        background: none !important;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        color: $color-gray !important;
+    }
+    &--vs {
+        border: $color-primary;
+    }
+}
+.v-select {
+    position: initial !important;
+}
+.select {
+    border: 1px solid $color-border;
+    padding: 11px 30px;
+    position: relative;
+    height: 69px;
+
+    & .default-label {
+        position: absolute;
+        top: -12px;
+        background-color: $color-white;
+        padding: 0 5px;
+    }
+
+    &--selected {
+        border-color: $color-primary;
+    }
+
+    & .vs__dropdown-menu {
+        top: 70px;
+    }
+}
+
+
+

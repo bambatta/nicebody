@@ -1,0 +1,30 @@
+@media #{$sm} {
+    .checkout {
+        display: block;
+        &-page {
+            .default-page__container {
+                padding: 0;
+            }
+        }
+        &__container {
+            padding-right: 17px;
+            padding-left: 17px;
+        }
+        justify-content: center;
+        &-cart {
+            display: none;
+            &_media {
+                display: block;
+            }
+        }
+        &-wrapper {
+            max-width: 100%;
+            padding-right: 0;
+        }
+    }
+    .promocod {
+        .default-btn {
+            padding: 23px 43px;
+        }
+    }
+}

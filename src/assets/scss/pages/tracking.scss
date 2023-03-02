@@ -1,0 +1,350 @@
+.tracking {
+    background-image: url("/images/tracking/Mask_group.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    &-section {
+        background: $color-white;;
+        padding: 48px;
+        display: flex;
+    }
+    
+    &-main {
+        background-color:$color-swiper;
+    }
+
+    &__head {
+        font-weight: 300;
+        font-size: 15px;
+        color: $color-gray;
+        margin-bottom: 15px;
+        line-height: 15px;
+
+        &--destination {
+            font-size: 14px;
+            margin-top: 8px;
+            margin-bottom: 4px;
+        }
+
+        &--note {
+            line-height: 20px;
+            margin: 0;
+        }
+
+        &--date {
+            font-weight: 300;
+            color: $color-gray;
+            font-size: 15px;
+            margin: 0;
+        }
+    }
+
+    &__content {
+        
+        height: 100%;
+        padding-top: 116px;
+        padding-bottom: 176px;
+        max-width: 770px;
+        width: 100%;
+
+        &--info {
+            padding-top: 43px;
+            padding-bottom: 80px;
+        }
+        
+
+        &-head {
+            text-align: center;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        &-descr {
+            margin-bottom: 40px;
+            margin-top: 19px;
+        }
+    }
+
+    &__actions {
+        width: 100%;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        gap: 20px;
+        
+        &-btn {
+            height: 100%;
+            color: $color-white;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+        }
+        
+    }
+
+    &__input {
+        box-shadow: none;
+        padding: 0;
+        max-width: 650px;
+        width: 100%;
+
+        & .input-wrapper {
+            margin: 0;
+        }
+
+        
+    }
+
+    .input {
+        height: 70px;
+    }
+
+    &__details {
+        margin-top: 48px;
+        font-family: 'Poppins';
+        font-style: normal;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__copy {
+        background: none;
+        border-style: none;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding: 0;
+        
+
+        &--text {
+            text-decoration: underline;
+            color: $color-primary;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+        }
+    }
+
+    &__number {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 25px;
+        padding-top: 53px;
+        padding-bottom: 49px;
+
+        &-details {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            
+        }
+
+        &-info {
+            .tracking__head {
+                margin-bottom: 12px;
+            }
+        }
+
+
+        &-current {
+            font-weight: 400;
+            font-size: 19px;
+            margin: 0;
+        }
+
+        &-status {
+            padding: 6px 15px;
+            font-weight: 400;
+            font-size: 15px;
+            background: $color-border;
+            color: $color-gray;
+            margin: 0;
+
+            &--green {
+                background:$color-bacground;
+                color: $light-green;
+            }
+
+            &--orange {
+                background:$status-bg;
+                color: $color-status;
+            }
+        }
+    }
+
+    &__way {
+        
+        gap: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 42px;
+
+        &-points {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &--line {
+                position: absolute;
+                width: 77%;
+                height: 2px;
+                top: 55%;
+                
+            }
+
+
+        }
+
+
+        &-status {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-left: 17px;
+            gap: 50px;
+            margin-top: 4px;
+            position: relative;
+
+            &--line {
+                position: absolute;
+                width: 1px;
+                height: 100%;
+                left: 5px;
+                background: $color-border;
+            }
+
+        }
+
+        &-head {
+            font-weight: 400;
+            font-size: 17px;
+        }
+
+        
+        &-road {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        &-country {
+            margin: 0;
+        }
+
+        &-popup {
+            background-color: $color-white;;
+            border: 1px solid $color-border;
+            position: absolute;
+            top: 100%;
+            display: none;
+            padding: 20px;
+        }
+
+        &-plan {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            gap: 10px;
+            margin-top: 10px;
+
+            &--text {
+                width: 70px;
+                text-align: center;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin: 0;
+
+            }
+
+            &--country {
+                width: 100%;
+                overflow: visible;
+                text-overflow: clip;
+            }
+
+            &-block {
+                position: relative;
+                display: flex;
+                justify-content: center;
+            }
+
+            &-block:hover > .tracking__way-popup {
+                display: inline-block;
+            }
+
+        }
+
+        
+
+        &-point {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            gap: 5px;
+
+            &--dot {
+                background-color: $color-border;
+                min-width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                margin: 1px;
+            }
+
+            &--active {
+                background-color: $color-primary;
+                z-index: 10;
+            }
+
+
+
+        }
+
+        
+
+        &-delivery {
+            display: flex;
+            gap: 35px;
+            position: relative;
+
+            &:last-child .tracking__way-point--dot::after {
+                position: absolute;
+                content: "";
+                display: block;
+                width: 10px;
+                height: 100%;
+                background-color: $color-white;
+                top: 11px;
+                left: 0;
+            }
+        }
+
+        &-stations {
+            width: 100%;
+        }
+
+        
+    }
+
+    & .default-btn {
+        padding: 23.5px 30px;
+    }
+
+}
+

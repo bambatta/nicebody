@@ -1,0 +1,23 @@
+@media #{$sm} {
+  .footer {
+    &-bottom {
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+    }
+  }
+}
+
+@media #{$xs} {
+  .footer {
+    &-payment {
+      flex-wrap: wrap;
+      max-width: 270px;
+    }
+    &-top {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+    }
+  }
+}

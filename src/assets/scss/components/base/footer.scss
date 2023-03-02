@@ -1,0 +1,106 @@
+.footer {
+    background:$color-footer;
+    &-top {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-logo {
+        width: 122px;
+        height: 69px;
+        margin-bottom: 23px;
+    }
+    &-list {
+        padding: 0;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+    }
+
+
+    &--icon {
+        color: $color-white;
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: 6px;
+
+        &-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $color-primary;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+        }
+    }
+    &-item {
+        button,
+        a {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            color: $color-white;
+            text-decoration: none;
+            text-align: left;
+            padding: 0;
+            &:hover {
+                color: $color-white;
+                text-decoration: none;
+            }
+        }
+
+        
+        
+    }
+    &-nav {
+        display: flex;
+        gap: 76px;
+        margin-right: 37px;
+    }
+    &-hr {
+        margin: 0;
+        border: none;
+        height: 1px;
+        background: $color-white;
+        opacity: 0.2;
+    }
+    &-bottom {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    &-payment {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        padding: 0;
+        margin: 0;
+    }
+    &-copyright {
+        font-weight: 300;
+        opacity: 0.5;
+    }
+}

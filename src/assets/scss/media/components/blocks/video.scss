@@ -1,0 +1,18 @@
+@media #{$sm} {
+    .video {
+        &-container{padding: 0;}
+    }
+}
+@media #{$xs} {
+    .video {
+       height: 262px;
+         &-wrapper {
+            height: 262px;
+            max-width: 360px;
+        }
+        &-overlay {
+            height: 262px;
+        }
+        &-container{padding: 0;}
+    }
+}

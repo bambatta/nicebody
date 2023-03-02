@@ -1,0 +1,46 @@
+.step {
+    max-width: 210px;
+    &-count {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 28px;
+    }
+    &-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        position: relative;
+      
+        padding: 0;
+    }
+    &-block{margin-top: 40px;}
+    &-item {
+        display: flex;
+        align-items: center;
+        gap: 10px; &:not(:first-child) {
+            &:before {
+                content: "";
+
+                display: block;
+                width: 70px;
+                height: 2px;
+
+                &:last-child {
+                    display: none;
+                }
+            }
+        }
+        &.active {
+            span {
+                color: $color-primary;
+            }
+            &::before {
+                background-color: $color-primary;
+            }
+        }
+       
+    }
+}

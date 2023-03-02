@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev -o",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "engines": {
+    "node": "^16.15.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.4.5",
+    "nuxt": "3.0.0-rc.8",
+    "sass": "^1.53.0"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^4.0.31",
+    "@nuxt/kit": "^3.0.0-rc.7",
+    "@nuxtjs/moment": "^1.6.1",
+    "@pinia/nuxt": "^0.3.1",
+    "bootstrap-vue-3": "^0.2.8",
+    "lightvue": "^1.4.9",
+    "lodash": "^4.17.21",
+    "nuxi": "^3.0.0-rc.8",
+    "object-to-formdata": "^4.4.2",
+    "qs": "^6.11.0",
+    "swiper": "^8.3.2",
+    "vee-validate": "^4.6.7",
+    "vue-gtag": "^2.0.1",
+    "vue-select": "^4.0.0-beta.3",
+    "vue-star-rating": "^2.1.0",
+    "vue-the-mask": "^0.11.1",
+    "vue3-tel-input": "^1.0.4",
+    "yup": "^0.32.11"
+  }
+}

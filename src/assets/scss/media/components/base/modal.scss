@@ -1,0 +1,37 @@
+@media #{$xs} {
+    .modal {
+        &-body {
+            padding: 30px !important;
+        }
+        &.static-page {
+            .modal-dialog {
+                padding: 0px 20px;
+            }
+            .default-title {
+                font-size: 32px;
+                line-height: 36px;
+            }
+        }
+
+        .default-btn,
+        .default-btn_border {
+          padding: 20px 0;
+        }
+
+
+        &__product {
+          .modal-dialog {
+            margin: 0 !important;
+          }
+          .modal-body {
+            padding: 15px !important;
+
+          }
+
+          .default-btn,
+          .default-btn_border {
+            padding: 11px 17px;
+          }
+        }
+    }
+}

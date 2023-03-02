@@ -1,0 +1,106 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-internal-autofill-selected {
+    background-color: $color-white !important;
+}
+
+.input {
+    /*  height: 69px; */
+    background: $color-white;
+    height: 100%;
+    box-shadow: 0px 3px 40px rgba(65, 45, 45, 0.1);
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: $color-black;
+    padding: 22px 30px;
+    border: none;
+    width: 100%;
+
+    &::placeholder {
+        color: $color-input;
+    }
+
+    &-wrapper {
+        transition: border-color 0.3s;
+        position: relative;
+        margin-bottom: 20px;
+        border: 1px solid $color-border;
+
+        .label {
+            position: absolute;
+            top: -13px;
+            left: 22px;
+            padding: 0 10px;
+            background: $color-white;
+        }
+
+        &--focused {
+            border-color: $color-primary;
+        }
+    }
+}
+
+.after-input {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    display: flex;
+    align-items: center;
+
+    .default-btn {
+        height: auto;
+
+        .icon-svg {
+            margin-right: 0;
+            margin-top: 0;
+        }
+    }
+}
+.vue-tel-input {
+    border: none !important;
+    padding: 0px 17px;
+    &:focus-visible,
+    &:focus-within {
+        outline: none;
+        box-shadow: none !important;
+    }
+}
+.phoneInput {
+    border: 1px solid $color-border;
+    height: 69px;
+
+    margin-bottom: 40px;
+    padding-top: 15px;
+    .errors {
+        padding-top: 20px;
+    }
+    label {
+        padding: 10px 30px 0px;
+        display: block;
+        & + input {
+            padding: 0px 20px;
+        }
+    }
+    input {
+        border: none;
+        width: 100%;
+        padding: 5px 20px;
+        margin: auto;
+    }
+    &.has-error {
+        border: 1px solid #ff0000;
+    }
+}
+.border_none {
+    height: 69px;
+    padding: 17px 0px;
+}
